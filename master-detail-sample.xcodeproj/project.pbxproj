@@ -33,6 +33,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17381C2F21CB2F67009F0E22 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */,
+				17CE0F7221CB2E0E001D2092 /* LaunchScreen.storyboard */,
+				17CE0F7521CB2E0E001D2092 /* Info.plist */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		17381C3021CB2F86009F0E22 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				17CE0F7021CB2E0E001D2092 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		17381C3121CB2F98009F0E22 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				17CE0F6B21CB2E0B001D2092 /* ViewController.swift */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
 		17CE0F5D21CB2E0B001D2092 = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +78,9 @@
 		17CE0F6821CB2E0B001D2092 /* master-detail-sample */ = {
 			isa = PBXGroup;
 			children = (
-				17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */,
-				17CE0F6B21CB2E0B001D2092 /* ViewController.swift */,
-				17CE0F7021CB2E0E001D2092 /* Assets.xcassets */,
-				17CE0F7221CB2E0E001D2092 /* LaunchScreen.storyboard */,
-				17CE0F7521CB2E0E001D2092 /* Info.plist */,
+				17381C2F21CB2F67009F0E22 /* application */,
+				17381C3121CB2F98009F0E22 /* modules */,
+				17381C3021CB2F86009F0E22 /* resources */,
 			);
 			path = "master-detail-sample";
 			sourceTree = "<group>";
