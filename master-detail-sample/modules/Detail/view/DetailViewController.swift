@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     
     var presenter: DetailViewPresentation!
     
-    @IBOutlet private weak var webView: WKWebView!
+    @IBOutlet private weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,6 @@ class DetailViewController: UIViewController {
 extension DetailViewController: DetailView {
     
     func load(from url: URL) {
-        webView.load(URLRequest(url: url))
+        webView.loadRequest(URLRequest(url: url))
     }
 }
