@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17381C3421CB2FF2009F0E22 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3321CB2FF2009F0E22 /* RootRouter.swift */; };
 		17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */; };
 		17CE0F6C21CB2E0B001D2092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6B21CB2E0B001D2092 /* ViewController.swift */; };
 		17CE0F7121CB2E0E001D2092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7021CB2E0E001D2092 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17381C3321CB2FF2009F0E22 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		17CE0F6621CB2E0B001D2092 /* master-detail-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-detail-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17CE0F6B21CB2E0B001D2092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +56,18 @@
 		17381C3121CB2F98009F0E22 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				17381C3221CB2FD0009F0E22 /* Root */,
 				17CE0F6B21CB2E0B001D2092 /* ViewController.swift */,
 			);
 			path = modules;
+			sourceTree = "<group>";
+		};
+		17381C3221CB2FD0009F0E22 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				17381C3321CB2FF2009F0E22 /* RootRouter.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		17CE0F5D21CB2E0B001D2092 = {
@@ -156,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17CE0F6C21CB2E0B001D2092 /* ViewController.swift in Sources */,
+				17381C3421CB2FF2009F0E22 /* RootRouter.swift in Sources */,
 				17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
