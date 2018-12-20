@@ -24,4 +24,8 @@ extension SearchResultViewPresenter: SearchResultViewPresentation {
     func viewDidLoad() {
         
     }
+    
+    func didSelectRow(at indexPath: IndexPath) {
+        router.showDetailView(from: URL(string: "https://github.com/")!)
+    }
 }

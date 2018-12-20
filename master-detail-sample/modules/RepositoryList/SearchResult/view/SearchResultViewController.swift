@@ -17,9 +17,19 @@ class SearchResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Search"
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         presenter.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 }
 
@@ -42,5 +52,9 @@ extension SearchResultViewController: UITableViewDelegate, UITableViewDataSource
         cell.textLabel?.text = "hoge"
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectRow(at: indexPath)
     }
 }

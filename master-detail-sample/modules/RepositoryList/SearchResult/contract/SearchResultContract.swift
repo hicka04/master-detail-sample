@@ -15,8 +15,10 @@ protocol SearchResultView: AnyObject {
 protocol SearchResultViewPresentation: AnyObject {
     
     func viewDidLoad()
+    func didSelectRow(at indexPath: IndexPath)
 }
 
 protocol SearchResultWireframe: AnyObject {
     
+    func showDetailView(from url: URL)
 }
