@@ -106,7 +106,7 @@
 			children = (
 				17381C3221CB2FD0009F0E22 /* Root */,
 				17381C3521CB310E009F0E22 /* Tab */,
-				17381C6321CB38B8009F0E22 /* RepositoryList */,
+				17381C6421CB39B1009F0E22 /* SearchResult */,
 				17381C7321CB433E009F0E22 /* Detail */,
 			);
 			path = modules;
@@ -216,14 +216,6 @@
 				17381C5E21CB374E009F0E22 /* User.swift */,
 			);
 			path = GitHub;
-			sourceTree = "<group>";
-		};
-		17381C6321CB38B8009F0E22 /* RepositoryList */ = {
-			isa = PBXGroup;
-			children = (
-				17381C6421CB39B1009F0E22 /* SearchResult */,
-			);
-			path = RepositoryList;
 			sourceTree = "<group>";
 		};
 		17381C6421CB39B1009F0E22 /* SearchResult */ = {
