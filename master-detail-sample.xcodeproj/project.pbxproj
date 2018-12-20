@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		17381C3421CB2FF2009F0E22 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3321CB2FF2009F0E22 /* RootRouter.swift */; };
+		17381C3A21CB3142009F0E22 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3921CB3142009F0E22 /* TabViewController.swift */; };
+		17381C3C21CB319B009F0E22 /* TabViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3B21CB319B009F0E22 /* TabViewPresenter.swift */; };
+		17381C3F21CB31C7009F0E22 /* TabContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3E21CB31C7009F0E22 /* TabContract.swift */; };
+		17381C4121CB3275009F0E22 /* TabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C4021CB3275009F0E22 /* TabRouter.swift */; };
 		17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */; };
 		17CE0F6C21CB2E0B001D2092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6B21CB2E0B001D2092 /* ViewController.swift */; };
 		17CE0F7121CB2E0E001D2092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7021CB2E0E001D2092 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 
 /* Begin PBXFileReference section */
 		17381C3321CB2FF2009F0E22 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		17381C3921CB3142009F0E22 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		17381C3B21CB319B009F0E22 /* TabViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewPresenter.swift; sourceTree = "<group>"; };
+		17381C3E21CB31C7009F0E22 /* TabContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContract.swift; sourceTree = "<group>"; };
+		17381C4021CB3275009F0E22 /* TabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRouter.swift; sourceTree = "<group>"; };
 		17CE0F6621CB2E0B001D2092 /* master-detail-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-detail-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17CE0F6B21CB2E0B001D2092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				17381C3221CB2FD0009F0E22 /* Root */,
+				17381C3521CB310E009F0E22 /* Tab */,
 				17CE0F6B21CB2E0B001D2092 /* ViewController.swift */,
 			);
 			path = modules;
@@ -68,6 +77,49 @@
 				17381C3321CB2FF2009F0E22 /* RootRouter.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		17381C3521CB310E009F0E22 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				17381C3821CB312D009F0E22 /* view */,
+				17381C3721CB3127009F0E22 /* presenter */,
+				17381C3621CB3119009F0E22 /* router */,
+				17381C3D21CB31B3009F0E22 /* contract */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		17381C3621CB3119009F0E22 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				17381C4021CB3275009F0E22 /* TabRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		17381C3721CB3127009F0E22 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				17381C3B21CB319B009F0E22 /* TabViewPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		17381C3821CB312D009F0E22 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				17381C3921CB3142009F0E22 /* TabViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		17381C3D21CB31B3009F0E22 /* contract */ = {
+			isa = PBXGroup;
+			children = (
+				17381C3E21CB31C7009F0E22 /* TabContract.swift */,
+			);
+			path = contract;
 			sourceTree = "<group>";
 		};
 		17CE0F5D21CB2E0B001D2092 = {
@@ -166,9 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17381C3A21CB3142009F0E22 /* TabViewController.swift in Sources */,
+				17381C3F21CB31C7009F0E22 /* TabContract.swift in Sources */,
 				17CE0F6C21CB2E0B001D2092 /* ViewController.swift in Sources */,
 				17381C3421CB2FF2009F0E22 /* RootRouter.swift in Sources */,
 				17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */,
+				17381C4121CB3275009F0E22 /* TabRouter.swift in Sources */,
+				17381C3C21CB319B009F0E22 /* TabViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RYHZQ93KG;
-				INFOPLIST_FILE = "master-detail-sample/Info.plist";
+				INFOPLIST_FILE = "master-detail-sample/application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RYHZQ93KG;
-				INFOPLIST_FILE = "master-detail-sample/Info.plist";
+				INFOPLIST_FILE = "master-detail-sample/application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

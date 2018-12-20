@@ -17,7 +17,7 @@ class RootRouter {
     }
     
     func showFirstView() {
-        window.rootViewController = ViewController()
+        window.rootViewController = TabRouter.assembleModules()
         window.makeKeyAndVisible()
     }
 }
