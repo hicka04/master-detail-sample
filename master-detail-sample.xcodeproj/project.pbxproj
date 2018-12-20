@@ -33,6 +33,7 @@
 		17381C8221CB475C009F0E22 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C8121CB475C009F0E22 /* DetailRouter.swift */; };
 		17381C8821CB4D12009F0E22 /* GitHubContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C8721CB4D12009F0E22 /* GitHubContract.swift */; };
 		17381C8A21CB4D1E009F0E22 /* GitHubInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C8921CB4D1E009F0E22 /* GitHubInteractor.swift */; };
+		17381C8D21CB55CE009F0E22 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C8C21CB55CE009F0E22 /* SplitViewController.swift */; };
 		17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */; };
 		17CE0F7121CB2E0E001D2092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7021CB2E0E001D2092 /* Assets.xcassets */; };
 		17CE0F7421CB2E0E001D2092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7221CB2E0E001D2092 /* LaunchScreen.storyboard */; };
@@ -65,6 +66,7 @@
 		17381C8121CB475C009F0E22 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		17381C8721CB4D12009F0E22 /* GitHubContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubContract.swift; sourceTree = "<group>"; };
 		17381C8921CB4D1E009F0E22 /* GitHubInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubInteractor.swift; sourceTree = "<group>"; };
+		17381C8C21CB55CE009F0E22 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		17CE0F6621CB2E0B001D2092 /* master-detail-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-detail-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17CE0F7021CB2E0E001D2092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		17381C4521CB35B7009F0E22 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				17381C8B21CB5589009F0E22 /* SplitView */,
 				17381C4621CB35C4009F0E22 /* GitHubClient */,
 			);
 			path = utils;
@@ -339,6 +342,14 @@
 			path = interactor;
 			sourceTree = "<group>";
 		};
+		17381C8B21CB5589009F0E22 /* SplitView */ = {
+			isa = PBXGroup;
+			children = (
+				17381C8C21CB55CE009F0E22 /* SplitViewController.swift */,
+			);
+			path = SplitView;
+			sourceTree = "<group>";
+		};
 		17CE0F5D21CB2E0B001D2092 = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +460,7 @@
 				17381C7021CB3B17009F0E22 /* SearchResultViewPresenter.swift in Sources */,
 				17381C6E21CB3A80009F0E22 /* SearchResultContract.swift in Sources */,
 				17381C5A21CB36C6009F0E22 /* GitHubAPI.swift in Sources */,
+				17381C8D21CB55CE009F0E22 /* SplitViewController.swift in Sources */,
 				17381C7A21CB43AC009F0E22 /* DetailViewController.swift in Sources */,
 				17381C3421CB2FF2009F0E22 /* RootRouter.swift in Sources */,
 				17381C7221CB3B8E009F0E22 /* SearchResultRouter.swift in Sources */,

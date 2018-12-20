@@ -25,6 +25,10 @@ class DetailRouter {
         
         return view
     }
+    
+    static func assembleDummy() -> UIViewController {
+        return UIViewController()
+    }
 }
 
 extension DetailRouter: DetailWireframe {

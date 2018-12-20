@@ -17,7 +17,8 @@ class RootRouter {
     }
     
     func showFirstView() {
-        window.rootViewController = TabRouter.assembleModules()
+        let splitView = SplitViewController(master: SearchResultRouter.assembleModules())
+        window.rootViewController = splitView
         window.makeKeyAndVisible()
     }
 }
