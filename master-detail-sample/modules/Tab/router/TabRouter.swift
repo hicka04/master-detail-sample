@@ -24,7 +24,7 @@ class TabRouter {
 extension TabRouter: TabWireframe {
     
     func showTabs() {
-        let view = ViewController()
+        let view = UINavigationController(rootViewController: SearchResultRouter.assembleModules())
         view.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         tabBarController?.viewControllers = [
             view

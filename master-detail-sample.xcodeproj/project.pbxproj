@@ -21,8 +21,12 @@
 		17381C6021CB374E009F0E22 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C5D21CB374D009F0E22 /* SearchResponse.swift */; };
 		17381C6121CB374E009F0E22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C5E21CB374E009F0E22 /* User.swift */; };
 		17381C6221CB374E009F0E22 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C5F21CB374E009F0E22 /* Repository.swift */; };
+		17381C6B21CB3A42009F0E22 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C6921CB3A42009F0E22 /* SearchResultViewController.swift */; };
+		17381C6C21CB3A42009F0E22 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17381C6A21CB3A42009F0E22 /* SearchResultViewController.xib */; };
+		17381C6E21CB3A80009F0E22 /* SearchResultContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C6D21CB3A80009F0E22 /* SearchResultContract.swift */; };
+		17381C7021CB3B17009F0E22 /* SearchResultViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C6F21CB3B17009F0E22 /* SearchResultViewPresenter.swift */; };
+		17381C7221CB3B8E009F0E22 /* SearchResultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C7121CB3B8E009F0E22 /* SearchResultRouter.swift */; };
 		17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */; };
-		17CE0F6C21CB2E0B001D2092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6B21CB2E0B001D2092 /* ViewController.swift */; };
 		17CE0F7121CB2E0E001D2092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7021CB2E0E001D2092 /* Assets.xcassets */; };
 		17CE0F7421CB2E0E001D2092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7221CB2E0E001D2092 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -42,9 +46,13 @@
 		17381C5D21CB374D009F0E22 /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		17381C5E21CB374E009F0E22 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		17381C5F21CB374E009F0E22 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		17381C6921CB3A42009F0E22 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		17381C6A21CB3A42009F0E22 /* SearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
+		17381C6D21CB3A80009F0E22 /* SearchResultContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultContract.swift; sourceTree = "<group>"; };
+		17381C6F21CB3B17009F0E22 /* SearchResultViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewPresenter.swift; sourceTree = "<group>"; };
+		17381C7121CB3B8E009F0E22 /* SearchResultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRouter.swift; sourceTree = "<group>"; };
 		17CE0F6621CB2E0B001D2092 /* master-detail-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-detail-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17CE0F6B21CB2E0B001D2092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17CE0F7021CB2E0E001D2092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17CE0F7321CB2E0E001D2092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17CE0F7521CB2E0E001D2092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +92,7 @@
 			children = (
 				17381C3221CB2FD0009F0E22 /* Root */,
 				17381C3521CB310E009F0E22 /* Tab */,
-				17CE0F6B21CB2E0B001D2092 /* ViewController.swift */,
+				17381C6321CB38B8009F0E22 /* RepositoryList */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -195,6 +203,58 @@
 			path = GitHub;
 			sourceTree = "<group>";
 		};
+		17381C6321CB38B8009F0E22 /* RepositoryList */ = {
+			isa = PBXGroup;
+			children = (
+				17381C6421CB39B1009F0E22 /* SearchResult */,
+			);
+			path = RepositoryList;
+			sourceTree = "<group>";
+		};
+		17381C6421CB39B1009F0E22 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				17381C6821CB39F7009F0E22 /* view */,
+				17381C6721CB39E4009F0E22 /* presenter */,
+				17381C6621CB39DA009F0E22 /* router */,
+				17381C6521CB39C9009F0E22 /* contract */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		17381C6521CB39C9009F0E22 /* contract */ = {
+			isa = PBXGroup;
+			children = (
+				17381C6D21CB3A80009F0E22 /* SearchResultContract.swift */,
+			);
+			path = contract;
+			sourceTree = "<group>";
+		};
+		17381C6621CB39DA009F0E22 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				17381C7121CB3B8E009F0E22 /* SearchResultRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		17381C6721CB39E4009F0E22 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				17381C6F21CB3B17009F0E22 /* SearchResultViewPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		17381C6821CB39F7009F0E22 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				17381C6921CB3A42009F0E22 /* SearchResultViewController.swift */,
+				17381C6A21CB3A42009F0E22 /* SearchResultViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		17CE0F5D21CB2E0B001D2092 = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17381C6C21CB3A42009F0E22 /* SearchResultViewController.xib in Resources */,
 				17CE0F7421CB2E0E001D2092 /* LaunchScreen.storyboard in Resources */,
 				17CE0F7121CB2E0E001D2092 /* Assets.xcassets in Resources */,
 			);
@@ -297,15 +358,18 @@
 				17381C5221CB368D009F0E22 /* GitHubClientError.swift in Sources */,
 				17381C3A21CB3142009F0E22 /* TabViewController.swift in Sources */,
 				17381C3F21CB31C7009F0E22 /* TabContract.swift in Sources */,
-				17CE0F6C21CB2E0B001D2092 /* ViewController.swift in Sources */,
+				17381C7021CB3B17009F0E22 /* SearchResultViewPresenter.swift in Sources */,
+				17381C6E21CB3A80009F0E22 /* SearchResultContract.swift in Sources */,
 				17381C5A21CB36C6009F0E22 /* GitHubAPI.swift in Sources */,
 				17381C3421CB2FF2009F0E22 /* RootRouter.swift in Sources */,
+				17381C7221CB3B8E009F0E22 /* SearchResultRouter.swift in Sources */,
 				17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */,
 				17381C6121CB374E009F0E22 /* User.swift in Sources */,
 				17381C5321CB368D009F0E22 /* GitHubAPIError.swift in Sources */,
 				17381C4121CB3275009F0E22 /* TabRouter.swift in Sources */,
 				17381C6221CB374E009F0E22 /* Repository.swift in Sources */,
 				17381C5921CB36C6009F0E22 /* HTTPMethod.swift in Sources */,
+				17381C6B21CB3A42009F0E22 /* SearchResultViewController.swift in Sources */,
 				17381C3C21CB319B009F0E22 /* TabViewPresenter.swift in Sources */,
 				17381C5821CB36C6009F0E22 /* GitHubRequest.swift in Sources */,
 				17381C4E21CB3633009F0E22 /* GitHubClient.swift in Sources */,
