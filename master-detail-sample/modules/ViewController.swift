@@ -12,7 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let request = GitHubAPI.SearchRepositories(keyword: "swift")
+        GitHubClient().send(request: request) { result in
+            switch result {
+            case .success(let response):
+                print(response.totalCount)
+            case .failure:
+                print("failure")
+            }
+        }
     }
 
 
