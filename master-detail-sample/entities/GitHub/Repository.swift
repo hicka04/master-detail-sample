@@ -10,7 +10,7 @@ import Foundation
 
 struct Repository: Decodable {
     
-    let id: Int
+    let id: ID
     let name: String
     let fullName: String  // 詳細ページ表示用に追加
     let htmlUrl: URL
@@ -22,5 +22,12 @@ struct Repository: Decodable {
         case fullName = "full_name"
         case htmlUrl = "html_url"
         case owner
+    }
+}
+
+extension Repository {
+    
+    struct ID: RawRepresentable, Decodable {
+        let rawValue: Int
     }
 }

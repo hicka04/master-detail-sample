@@ -212,8 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				17381C5F21CB374E009F0E22 /* Repository.swift */,
-				17381C5D21CB374D009F0E22 /* SearchResponse.swift */,
 				17381C5E21CB374E009F0E22 /* User.swift */,
+				17381C5D21CB374D009F0E22 /* SearchResponse.swift */,
 			);
 			path = GitHub;
 			sourceTree = "<group>";

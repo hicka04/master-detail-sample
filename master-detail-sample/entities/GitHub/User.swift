@@ -10,6 +10,13 @@ import Foundation
 
 struct User: Decodable {
     
-    let id: Int
+    let id: ID
     let login: String
+}
+
+extension User {
+    
+    struct ID: RawRepresentable, Decodable {
+        let rawValue: Int
+    }
 }
