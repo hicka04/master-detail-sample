@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17381C3421CB2FF2009F0E22 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3321CB2FF2009F0E22 /* RootRouter.swift */; };
-		17381C3A21CB3142009F0E22 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3921CB3142009F0E22 /* TabViewController.swift */; };
-		17381C3C21CB319B009F0E22 /* TabViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3B21CB319B009F0E22 /* TabViewPresenter.swift */; };
-		17381C3F21CB31C7009F0E22 /* TabContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C3E21CB31C7009F0E22 /* TabContract.swift */; };
-		17381C4121CB3275009F0E22 /* TabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C4021CB3275009F0E22 /* TabRouter.swift */; };
 		17381C4E21CB3633009F0E22 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C4A21CB3633009F0E22 /* GitHubClient.swift */; };
 		17381C5221CB368D009F0E22 /* GitHubClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C5021CB368D009F0E22 /* GitHubClientError.swift */; };
 		17381C5321CB368D009F0E22 /* GitHubAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C5121CB368D009F0E22 /* GitHubAPIError.swift */; };
@@ -41,10 +37,6 @@
 
 /* Begin PBXFileReference section */
 		17381C3321CB2FF2009F0E22 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		17381C3921CB3142009F0E22 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		17381C3B21CB319B009F0E22 /* TabViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewPresenter.swift; sourceTree = "<group>"; };
-		17381C3E21CB31C7009F0E22 /* TabContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContract.swift; sourceTree = "<group>"; };
-		17381C4021CB3275009F0E22 /* TabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRouter.swift; sourceTree = "<group>"; };
 		17381C4A21CB3633009F0E22 /* GitHubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClient.swift; sourceTree = "<group>"; };
 		17381C5021CB368D009F0E22 /* GitHubClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClientError.swift; sourceTree = "<group>"; };
 		17381C5121CB368D009F0E22 /* GitHubAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPIError.swift; sourceTree = "<group>"; };
@@ -107,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				17381C3221CB2FD0009F0E22 /* Root */,
-				17381C3521CB310E009F0E22 /* Tab */,
 				17381C6421CB39B1009F0E22 /* SearchResult */,
 				17381C7321CB433E009F0E22 /* Detail */,
 			);
@@ -120,49 +111,6 @@
 				17381C3321CB2FF2009F0E22 /* RootRouter.swift */,
 			);
 			path = Root;
-			sourceTree = "<group>";
-		};
-		17381C3521CB310E009F0E22 /* Tab */ = {
-			isa = PBXGroup;
-			children = (
-				17381C3821CB312D009F0E22 /* view */,
-				17381C3721CB3127009F0E22 /* presenter */,
-				17381C3621CB3119009F0E22 /* router */,
-				17381C3D21CB31B3009F0E22 /* contract */,
-			);
-			path = Tab;
-			sourceTree = "<group>";
-		};
-		17381C3621CB3119009F0E22 /* router */ = {
-			isa = PBXGroup;
-			children = (
-				17381C4021CB3275009F0E22 /* TabRouter.swift */,
-			);
-			path = router;
-			sourceTree = "<group>";
-		};
-		17381C3721CB3127009F0E22 /* presenter */ = {
-			isa = PBXGroup;
-			children = (
-				17381C3B21CB319B009F0E22 /* TabViewPresenter.swift */,
-			);
-			path = presenter;
-			sourceTree = "<group>";
-		};
-		17381C3821CB312D009F0E22 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				17381C3921CB3142009F0E22 /* TabViewController.swift */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		17381C3D21CB31B3009F0E22 /* contract */ = {
-			isa = PBXGroup;
-			children = (
-				17381C3E21CB31C7009F0E22 /* TabContract.swift */,
-			);
-			path = contract;
 			sourceTree = "<group>";
 		};
 		17381C4521CB35B7009F0E22 /* utils */ = {
@@ -454,8 +402,6 @@
 				17381C6021CB374E009F0E22 /* SearchResponse.swift in Sources */,
 				17381C5221CB368D009F0E22 /* GitHubClientError.swift in Sources */,
 				17381C7F21CB45B6009F0E22 /* DetailContract.swift in Sources */,
-				17381C3A21CB3142009F0E22 /* TabViewController.swift in Sources */,
-				17381C3F21CB31C7009F0E22 /* TabContract.swift in Sources */,
 				17381C8A21CB4D1E009F0E22 /* GitHubInteractor.swift in Sources */,
 				17381C7021CB3B17009F0E22 /* SearchResultViewPresenter.swift in Sources */,
 				17381C6E21CB3A80009F0E22 /* SearchResultContract.swift in Sources */,
@@ -470,11 +416,9 @@
 				17381C5321CB368D009F0E22 /* GitHubAPIError.swift in Sources */,
 				17381C7D21CB4587009F0E22 /* DetailViewPresenter.swift in Sources */,
 				17381C8821CB4D12009F0E22 /* GitHubContract.swift in Sources */,
-				17381C4121CB3275009F0E22 /* TabRouter.swift in Sources */,
 				17381C6221CB374E009F0E22 /* Repository.swift in Sources */,
 				17381C5921CB36C6009F0E22 /* HTTPMethod.swift in Sources */,
 				17381C6B21CB3A42009F0E22 /* SearchResultViewController.swift in Sources */,
-				17381C3C21CB319B009F0E22 /* TabViewPresenter.swift in Sources */,
 				17381C5821CB36C6009F0E22 /* GitHubRequest.swift in Sources */,
 				17381C4E21CB3633009F0E22 /* GitHubClient.swift in Sources */,
 			);
