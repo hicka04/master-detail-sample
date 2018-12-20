@@ -31,6 +31,8 @@
 		17381C7D21CB4587009F0E22 /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C7C21CB4587009F0E22 /* DetailViewPresenter.swift */; };
 		17381C7F21CB45B6009F0E22 /* DetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C7E21CB45B6009F0E22 /* DetailContract.swift */; };
 		17381C8221CB475C009F0E22 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C8121CB475C009F0E22 /* DetailRouter.swift */; };
+		17381C8821CB4D12009F0E22 /* GitHubContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C8721CB4D12009F0E22 /* GitHubContract.swift */; };
+		17381C8A21CB4D1E009F0E22 /* GitHubInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17381C8921CB4D1E009F0E22 /* GitHubInteractor.swift */; };
 		17CE0F6A21CB2E0B001D2092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */; };
 		17CE0F7121CB2E0E001D2092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7021CB2E0E001D2092 /* Assets.xcassets */; };
 		17CE0F7421CB2E0E001D2092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CE0F7221CB2E0E001D2092 /* LaunchScreen.storyboard */; };
@@ -61,6 +63,8 @@
 		17381C7C21CB4587009F0E22 /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
 		17381C7E21CB45B6009F0E22 /* DetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContract.swift; sourceTree = "<group>"; };
 		17381C8121CB475C009F0E22 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		17381C8721CB4D12009F0E22 /* GitHubContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubContract.swift; sourceTree = "<group>"; };
+		17381C8921CB4D1E009F0E22 /* GitHubInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubInteractor.swift; sourceTree = "<group>"; };
 		17CE0F6621CB2E0B001D2092 /* master-detail-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-detail-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE0F6921CB2E0B001D2092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17CE0F7021CB2E0E001D2092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -310,6 +314,39 @@
 			path = router;
 			sourceTree = "<group>";
 		};
+		17381C8321CB4CB4009F0E22 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				17381C8421CB4CE6009F0E22 /* GitHub */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		17381C8421CB4CE6009F0E22 /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				17381C8621CB4D01009F0E22 /* interactor */,
+				17381C8521CB4CF9009F0E22 /* contract */,
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
+		17381C8521CB4CF9009F0E22 /* contract */ = {
+			isa = PBXGroup;
+			children = (
+				17381C8721CB4D12009F0E22 /* GitHubContract.swift */,
+			);
+			path = contract;
+			sourceTree = "<group>";
+		};
+		17381C8621CB4D01009F0E22 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				17381C8921CB4D1E009F0E22 /* GitHubInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
 		17CE0F5D21CB2E0B001D2092 = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +368,7 @@
 			children = (
 				17381C2F21CB2F67009F0E22 /* application */,
 				17381C3121CB2F98009F0E22 /* modules */,
+				17381C8321CB4CB4009F0E22 /* data */,
 				17381C5B21CB3722009F0E22 /* entities */,
 				17381C4521CB35B7009F0E22 /* utils */,
 				17381C3021CB2F86009F0E22 /* resources */,
@@ -415,6 +453,7 @@
 				17381C7F21CB45B6009F0E22 /* DetailContract.swift in Sources */,
 				17381C3A21CB3142009F0E22 /* TabViewController.swift in Sources */,
 				17381C3F21CB31C7009F0E22 /* TabContract.swift in Sources */,
+				17381C8A21CB4D1E009F0E22 /* GitHubInteractor.swift in Sources */,
 				17381C7021CB3B17009F0E22 /* SearchResultViewPresenter.swift in Sources */,
 				17381C6E21CB3A80009F0E22 /* SearchResultContract.swift in Sources */,
 				17381C5A21CB36C6009F0E22 /* GitHubAPI.swift in Sources */,
@@ -426,6 +465,7 @@
 				17381C8221CB475C009F0E22 /* DetailRouter.swift in Sources */,
 				17381C5321CB368D009F0E22 /* GitHubAPIError.swift in Sources */,
 				17381C7D21CB4587009F0E22 /* DetailViewPresenter.swift in Sources */,
+				17381C8821CB4D12009F0E22 /* GitHubContract.swift in Sources */,
 				17381C4121CB3275009F0E22 /* TabRouter.swift in Sources */,
 				17381C6221CB374E009F0E22 /* Repository.swift in Sources */,
 				17381C5921CB36C6009F0E22 /* HTTPMethod.swift in Sources */,

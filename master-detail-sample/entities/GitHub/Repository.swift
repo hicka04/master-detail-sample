@@ -13,7 +13,7 @@ struct Repository: Decodable {
     let id: Int
     let name: String
     let fullName: String  // 詳細ページ表示用に追加
-    let htmlUrl: String
+    let htmlUrl: URL
     let owner: User
     
     enum CodingKeys: String, CodingKey {

@@ -13,6 +13,14 @@ class SearchResultViewController: UIViewController {
     var presenter: SearchResultViewPresentation!
     
     @IBOutlet private weak var tableView: UITableView!
+    
+    private var repositories: [Repository] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +43,9 @@ class SearchResultViewController: UIViewController {
 
 extension SearchResultViewController: SearchResultView {
     
+    func updateRepositories(_ repositories: [Repository]) {
+        self.repositories = repositories
+    }
 }
 
 extension SearchResultViewController: UITableViewDelegate, UITableViewDataSource {
@@ -44,12 +55,12 @@ extension SearchResultViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return repositories.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "hoge"
+        cell.textLabel?.text = repositories[indexPath.row].fullName
         
         return cell
     }

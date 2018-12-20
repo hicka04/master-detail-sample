@@ -10,6 +10,7 @@ import UIKit
 
 protocol SearchResultView: AnyObject {
     
+    func updateRepositories(_ repositories: [Repository])
 }
 
 protocol SearchResultViewPresentation: AnyObject {
