@@ -35,6 +35,6 @@ extension SearchResultRouter: SearchResultWireframe {
     
     func showDetailView(from url: URL) {
         let detailView = DetailRouter.assembleModules(from: url)
-        viewController.navigationController?.pushViewController(detailView, animated: true)
+        viewController.showDetailViewController(detailView, sender: self)
     }
 }
