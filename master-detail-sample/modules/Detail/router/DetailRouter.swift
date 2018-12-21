@@ -10,7 +10,7 @@ import UIKit
 
 class DetailRouter {
     
-    private weak var viewController: UIViewController?
+    private unowned var viewController: UIViewController
     
     private init(viewController: UIViewController) {
         self.viewController = viewController
