@@ -11,20 +11,22 @@ import WebKit
 
 class DetailViewController: UIViewController {
     
-    var presenter: DetailViewPresentation!
-    
     @IBOutlet private weak var webView: UIWebView!
-
+    private let url: URL
+    
+    init(url: URL) {
+        self.url = url
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter.viewDidLoad()
-    }
-}
-
-extension DetailViewController: DetailView {
-    
-    func load(from url: URL) {
         webView.loadRequest(URLRequest(url: url))
     }
 }

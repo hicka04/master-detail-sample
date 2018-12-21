@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-        let router = RootRouter(window: window)
-        router.showFirstView()
+        let splitView = SplitViewController(master: SearchResultViewController())
+        window.rootViewController = splitView
+        window.makeKeyAndVisible()
         
         return true
     }

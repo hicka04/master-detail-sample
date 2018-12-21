@@ -14,7 +14,7 @@ class SplitViewController: UISplitViewController {
     private let detail: UIViewController
     
     init(master: UIViewController,
-         detail: UIViewController = DetailRouter.assembleDummy()) {
+         detail: UIViewController = UIViewController()) {
         self.master = master
         self.detail = detail
         

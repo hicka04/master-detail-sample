@@ -10,8 +10,6 @@ import UIKit
 
 class SearchResultViewController: UIViewController {
     
-    var presenter: SearchResultViewPresentation!
-    
     @IBOutlet private weak var tableView: UITableView!
     
     private var repositories: [Repository] = [] {
@@ -29,7 +27,18 @@ class SearchResultViewController: UIViewController {
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
-        presenter.viewDidLoad()
+        let request = GitHubAPI.SearchRepositories(keyword: "swift")
+        GitHubClient().send(request: request) { [weak self] result in
+            switch result {
+            case .success(let response):
+                guard let `self` = self else {
+                    return
+                }
+                self.repositories = response.items
+            default:
+                break
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,13 +47,6 @@ class SearchResultViewController: UIViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: true)
         }
-    }
-}
-
-extension SearchResultViewController: SearchResultView {
-    
-    func updateRepositories(_ repositories: [Repository]) {
-        self.repositories = repositories
     }
 }
 
@@ -66,6 +68,8 @@ extension SearchResultViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.didSelectRow(at: indexPath)
+        let url = repositories[indexPath.row].htmlUrl
+        let detailView = DetailViewController(url: url)
+        showDetailViewController(detailView, sender: self)
     }
 }
